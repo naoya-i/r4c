@@ -10,4 +10,4 @@ title: Paper
 
 # 連絡先
 
-[Naoya Inoue](https://naoya-i.github.io)
+[井之上 直也](https://naoya-i.github.io)
