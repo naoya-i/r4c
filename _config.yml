@@ -1,0 +1,8 @@
+theme: minima
+
+header_pages:
+  - dataset.md
+  - contact.md
+
+title: NAOYA INOUE/井之上 直也
+author: Naoya Inoue
