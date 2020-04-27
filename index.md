@@ -22,9 +22,7 @@ This website publicly releases the R4C dataset, the first, quality-assured datas
 
 # Download
 
-The following repository contains the R4C corpus and its official evaluation script.
-
-https://github.com/naoya-i/r4c
+[This repository](https://github.com/naoya-i/r4c) contains the R4C corpus and its official evaluation script.
 
 
 # Leaderboard
