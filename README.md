@@ -37,7 +37,7 @@ The entire file is a big dictionary, where the key is an instance ID of HotpotQA
 }
 ```
 
-Each derivation (`ANNOTATOR_1_DERIVATION`) is represented as a list of derivation steps.
+Each derivation (`ANNOTATOR_*_DERIVATION`) is represented as a list of derivation steps.
 Each derivation step consists of a supporting fact (i.e. the title of article and sentence ID in HotpotQA dataset) and a relational fact (i.e. a list of three strings).
 
 ```
