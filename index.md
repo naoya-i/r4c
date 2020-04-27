@@ -14,7 +14,7 @@ To address this issue, we introduce R4C, a new task for evaluating RC systems' i
 R4C requires giving not only answers but also derivations: explanations that justify predicted answers.
 
 <p align="center">
-<img src="./imgs/fig1.png" /> <br />
+<img src="./imgs/fig1.png" width="60%"/> <br />
 </p>
 
 This website publicly releases the R4C dataset, the first, quality-assured dataset consisting of 4.8k questions, each of which is annotated with 3 reference derivations (i.e. 14.5k derivations).
