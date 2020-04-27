@@ -9,13 +9,13 @@ This is the repository of the following paper:
 See https://naoya-i.github.io/r4c/ for further information.
 
 
-# What we have in the repository
+# Overview
 
-This repository contains:
+This repository contains the following datasets and script:
 
 - R4C Corpus (`corpus/train.json`, `corpus/dev_csf.json`)
-- Official evaluation script (`src/r4c_evaluate.py`)
 - Prediction of two baseline models (CORE, IE) and oracle (`prediction/bm_core.json`, `prediction/bm_ie.json`, `prediction/oracle.json`)
+- Official evaluation script (`src/r4c_evaluate.py`)
 
 
 # R4C Corpus
@@ -23,6 +23,42 @@ This repository contains:
 The training set and the dev set are `corpus/train.json`, `corpus/dev_csf.json`, respectively.
 
 ## File format
+
+The files are in standard JSON format.
+The entire file is a big dictionary, where the key is an instance ID of HotpotQA dataset and the value is a list of derivations given by three different annotators.
+
+```
+{
+  HOTPOTQA_INSTANCE_ID: [
+    ANNOTATOR_1_DERIVATION,
+    ANNOTATOR_2_DERIVATION,
+    ANNOTATOR_3_DERIVATION
+  ]
+}
+```
+
+Each derivation (`ANNOTATOR_1_DERIVATION`) is represented as a list of derivation steps.
+Each derivation step consists of a supporting fact (i.e. the title of article and sentence ID in HotpotQA dataset) and a relational fact (i.e. a list of three strings).
+
+```
+[
+  [
+    ARTICLE_TITLE,
+    SENTENCE_ID,
+    [
+      HEAD_ENTITY,
+      RELATION,
+      TAIL_ENTITY
+    ]
+  ],
+  [
+    ...
+  ],
+  ...
+]
+```
+
+The following JSON fragment is an actual example from the corpus:
 
 ```
 {
@@ -88,9 +124,7 @@ The training set and the dev set are `corpus/train.json`, `corpus/dev_csf.json`,
       ]
     ]
   ],
-  "5a8c7595554299585d9e36b6": [...],
-  ...
-}
+  "5a8c7595554299585d9e36b6": ...
 ```
 
 
