@@ -13,9 +13,9 @@ See https://naoya-i.github.io/r4c/ for further information.
 
 This repository contains:
 
-- R4C Corpus
-- Official evaluation script
-- Prediction of two baseline models (CORE, IE) and oracle
+- R4C Corpus (`corpus/train.json`, `corpus/dev_csf.json`)
+- Official evaluation script (`src/r4c_evaluate.py`)
+- Prediction of two baseline models (CORE, IE) and oracle (`prediction/bm_core.json`, `prediction/bm_ie.json`, `prediction/oracle.json`)
 
 
 # R4C Corpus
@@ -138,6 +138,7 @@ The training set and the dev set are `corpus/train.json`, `corpus/dev_csf.json`,
         ]
       ]
     ],
+    ...
   }
 }
 ```
