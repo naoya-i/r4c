@@ -1,8 +1,4 @@
 theme: minima
 
-header_pages:
-  - dataset.md
-  - paper.md
-
 title: Right for Right Reasons RC (R4C)
 author: Naoya Inoue
