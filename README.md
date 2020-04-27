@@ -2,11 +2,11 @@
 
 (Under construction)
 
-This is the repository of R4C corpus introduced in the following paper:
+This is the repository of the following paper:
 
-- **Naoya Inoue**, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, to appear.
+- Naoya Inoue, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, to appear.
 
-See https://naoya-i.github.io/r4c/ for more about R4C corpus.
+See https://naoya-i.github.io/r4c/ for further information.
 
 
 # What we have in the repository
@@ -142,7 +142,7 @@ The training set and the dev set are `corpus/train.json`, `corpus/dev_csf.json`,
 }
 ```
 
-You can find example prediction file in `prediction/bm_core.json` (baseline model CORE), `prediction/bm_ie.json` (baseline model IE) and `prediction/oracle.json` (human oracle).
+You can find example prediction files in `prediction/bm_core.json` (baseline model CORE), `prediction/bm_ie.json` (baseline model IE) and `prediction/oracle.json` (human oracle).
 
 
 ## How to run
@@ -153,6 +153,9 @@ You can find example prediction file in `prediction/bm_core.json` (baseline mode
 ## Output format
 
 ```
-{"e": [0.8243644596919709, 0.8341406821599607, 0.8241752304610381], "r": [0.7168995180557596, 0.7183956173976581, 0.7094
-029197329732], "er": [0.7685931868076684, 0.7757018447656213, 0.7666854346880572]}
+{
+  "e": [0.8243644596919709, 0.8341406821599607, 0.8241752304610381],
+  "r": [0.7168995180557596, 0.7183956173976581, 0.7094029197329732],
+  "er": [0.7685931868076684, 0.7757018447656213, 0.7666854346880572]
+}
 ```
