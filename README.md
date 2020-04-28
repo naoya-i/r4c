@@ -1,6 +1,9 @@
-# Introduction
 
-(Under construction)
+<p align="center">
+<img src="https://naoya-i.github.io/r4c/imgs/logo.png" width="100px">
+</p>
+
+# Introduction
 
 This is the repository of the following paper:
 
@@ -18,14 +21,15 @@ This repository contains the following datasets and script:
 - Official evaluation script (`src/r4c_evaluate.py`)
 
 
-# R4C Corpus
+# R4C corpus
 
-The training set and the dev set are `corpus/train.json`, `corpus/dev_csf.json`, respectively.
+The corpus is divided into the training set (`corpus/train.json`) and the dev set (`corpus/dev_csf.json`).
 
-## File format
+
+## R4C file format
 
 The files are in standard JSON format.
-The entire file is a big dictionary, where the key is an instance ID of HotpotQA dataset and the value is a list of derivations given by three different annotators.
+The entire file is a big dictionary, where the key is an instance ID of [HotpotQA](https://hotpotqa.github.io) and the corresponding value is a list of derivations given by three different annotators.
 
 ```
 {
@@ -38,7 +42,7 @@ The entire file is a big dictionary, where the key is an instance ID of HotpotQA
 ```
 
 Each derivation (`ANNOTATOR_*_DERIVATION`) is represented as a list of derivation steps.
-Each derivation step consists of a supporting fact (i.e. the title of article and sentence ID in HotpotQA dataset) and a relational fact (i.e. a list of three strings).
+Each derivation step consists of a supporting fact (an article title and a sentence ID in HotpotQA) and a relational fact (a list of three strings---head, relation, tail).
 
 ```
 [
@@ -130,7 +134,26 @@ The following JSON fragment is an actual example from the corpus:
 
 # Official evaluation script
 
-## Prepare your output
+As described in Section 2.2 in the paper, the evaluation metric of R4C involves an optimization problem.
+To make the evaluation easier and fair for everyone, we provide an official evaluation script written in Python.
+
+
+## Dependency
+
+Please install the following Python packages (you can install them via `pip install pulp editdistance tqdm`):
+
+- `pulp`
+- `editdistance`
+- `tqdm`
+
+
+## Prediction file format
+
+The prediction file should basically follow [HotpotQA prediction file format](https://github.com/hotpotqa/hotpot#prediction-file-format) (a JSON dictionary).
+On top of `answer` key (answers) and `sp` key (supporting facts), add `re` key for derivations.
+The value of `re` should be a dictionary, where the key is a HotpotQA instance ID and the value is a derivation, similar to `answer` and `sp`.
+Each derivation should follow the same format as [here](#r4c-file-format).
+An example is given below.
 
 ```
 {
@@ -177,15 +200,29 @@ The following JSON fragment is an actual example from the corpus:
 }
 ```
 
-You can find example prediction files in `prediction/bm_core.json` (baseline model CORE), `prediction/bm_ie.json` (baseline model IE) and `prediction/oracle.json` (human oracle).
+You can also find more example prediction files in `prediction` folder.
 
 
 ## How to run
 
-`python src/r4c_evaluate.py --prediction /path/to/your_output.json --label corpus/dev_csf.json`
+To evaluate your prediction (say `/path/to/your_prediction.json`), simply run the following command:
+
+`python src/r4c_evaluate.py --prediction /path/to/your_prediction.json --label corpus/dev_csf.json`
+
+You can also use the HotpotQA official evaluation script to evaluate the performance of answer prediction and supporting facts prediction:
+
+`python /path/to/hotpot_evaluate_v1.py /path/to/your_prediction.json /path/to/hotpot_dev_distractor_v1.json`
 
 
 ## Output format
+
+The script outputs a JSON dictionary consisting of three entries:
+
+- `"e"`: a list. Each element represents *entity-level* precision, recall, and f1.
+- `"r"`: a list. Each element represents *relation-level* precision, recall, and f1.
+- `"er"`: a list. Each element represents *full* precision, recall, and f1.
+
+An example is given below.
 
 ```
 {
@@ -194,3 +231,5 @@ You can find example prediction files in `prediction/bm_core.json` (baseline mod
   "er": [0.7685931868076684, 0.7757018447656213, 0.7666854346880572]
 }
 ```
+
+See Section 2.2 in the paper for further details.

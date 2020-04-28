@@ -1,18 +1,14 @@
 
 import argparse
 import logging
-import os
 import numpy as np
 import random
-import sys
 import collections
 
 import pulp
 import editdistance
 
 import json
-import spacy
-import itertools
 
 from tqdm import tqdm
 
