@@ -48,12 +48,13 @@ This website publicly releases the R4C dataset, the first, quality-assured datas
 1. Naoya Inoue, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, to appear.
 1. *Your work here!*
 
-To list your work, please contact us about your results and publication.
-Send us the following informatoin (via a link to your repository or an email attachment):
+To list your work, please contact us the following information:
 
-- Your prediction file following [R4C prediction file format](https://github.com/naoya-i/r4c#prediction-file-format)
-- Output of [the official evaluation script](https://github.com/naoya-i/r4c#official-evaluation-script)
-- Whether it is in golden supporting facts setting or not
+1. Your prediction file following [R4C prediction file format](https://github.com/naoya-i/r4c#prediction-file-format)
+2. Output of [the official evaluation script](https://github.com/naoya-i/r4c#official-evaluation-script)
+3. Whether it is in golden supporting facts setting or not
+4. Public repository of your model
+5. Reference to your publication
 
 Finally, please make sure that you are reporting the results on the dev set of R4C corpus ;)
 
