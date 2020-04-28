@@ -17,7 +17,7 @@ R4C requires giving not only answers but also derivations: explanations that jus
 <img src="./imgs/fig1.png" width="60%"/> <br />
 </p>
 
-This website publicly releases the R4C dataset, the first, quality-assured dataset consisting of 4.8k questions, each of which is annotated with 3 reference derivations (i.e. 14.5k derivations).
+This website publicly releases the R4C dataset, the first, quality-assured dataset consisting of 4.6k questions, each of which is annotated with 3 reference derivations (i.e. 13.8k derivations).
 
 
 # Download
