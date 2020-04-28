@@ -29,27 +29,33 @@ This website publicly releases the R4C dataset, the first, quality-assured datas
 
 ## Full prediction setting
 
-|Model|Entity|Relation|Full|
-|-|-|-|-|
-| Human [1]           | 83.3/81.5/81.6 | 72.2/69.2/69.8 | 77.6/75.0/75.5 |
+|Model|Entity|Relation|Full|Resource|
+|-|-|-|-|-|
+| Human [1]           | 83.3/81.5/81.6 | 72.2/69.2/69.8 | 77.6/75.0/75.5 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/oracle.json) |
+
 
 ## Golden supporting facts setting
 
-|Model|Entity|Relation|Full|
-|-|-|-|-|
-| Human [1]           | 83.3/81.5/81.6 | 72.2/69.2/69.8 | 77.6/75.0/75.5 |
-| Baseline (CORE) [1] | 66.1/59.8/61.8 | 50.9/45.9/47.4 | 59.1/53.4/55.1 |
-| Baseline (IE) [1]   | 11.1/52.8/16.3 | 13.7/62.7/19.9 | 11.2/51.9/16.3 |
+|Model|Entity|Relation|Full|Resource|
+|-|-|-|-|-|
+| Human [1]           | 83.3/81.5/81.6 | 72.2/69.2/69.8 | 77.6/75.0/75.5 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/oracle.json) |
+| Baseline (CORE) [1] | 66.1/59.8/61.8 | 50.9/45.9/47.4 | 59.1/53.4/55.1 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/bm_core.json) |
+| Baseline (IE) [1]   | 11.1/52.8/16.3 | 13.7/62.7/19.9 | 11.2/51.9/16.3 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/bm_ie.json) |
 
-## References
+
+## Model references
 
 1. Naoya Inoue, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, to appear.
+1. *Your work here!*
 
-To list your work here, please contact us about your results and publication.
-Before submitting, please make sure the following:
+To list your work, please contact us about your results and publication.
+Send us the following informatoin (via a link to your repository or an email attachment):
 
-- Use the official evaluation script.
-- Report the results on the dev portion of R4C corpus.
+- Your prediction file following [R4C prediction file format](https://github.com/naoya-i/r4c#prediction-file-format)
+- Output of [the official evaluation script](https://github.com/naoya-i/r4c#official-evaluation-script)
+- Whether it is in golden supporting facts setting or not
+
+Finally, please make sure that you are reporting the results on the dev set of R4C corpus ;)
 
 We look forward to your results!
 
