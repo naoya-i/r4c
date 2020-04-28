@@ -19,7 +19,8 @@ This repository contains the following datasets and script:
 - R4C Corpus (`corpus/train.json`, `corpus/dev_csf.json`)
 - Prediction of two baseline models (CORE, IE) and oracle (`prediction/bm_core.json`, `prediction/bm_ie.json`, `prediction/oracle.json`)
 - Official evaluation script (`src/r4c_evaluate.py`)
-
+- Baseline models (TBA by July)
+- Crowdsourcing interface (TBA by July)
 
 # R4C corpus
 
