@@ -14,7 +14,7 @@ from tqdm import tqdm
 
 
 def editdist(p_pred, p_gold):
-    return 1 - (editdistance.eval(p_pred, p_gold) / max(len(p_pred), len(p_gold)))
+    return 1 - (editdistance.eval(p_pred.lower(), p_gold.lower()) / max(len(p_pred), len(p_gold)))
 
 
 def print_alignment(pred, true, a_pred, a_true):
