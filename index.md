@@ -31,16 +31,16 @@ This website publicly releases the R4C dataset, the first, quality-assured datas
 
 |Model|Entity|Relation|Full|Resource|
 |-|-|-|-|-|
-| Human [1]           | 83.3/81.5/81.6 | 72.2/69.2/69.8 | 77.6/75.0/75.5 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/oracle.json) |
+| Human [1]           | 83.4/81.1/81.4 | 72.3/69.4/70.0 | 77.7/75.1/75.6 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/oracle.json) |
 
 
 ## Golden supporting facts setting
 
 |Model|Entity|Relation|Full|Resource|
 |-|-|-|-|-|
-| Human [1]           | 83.3/81.5/81.6 | 72.2/69.2/69.8 | 77.6/75.0/75.5 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/oracle.json) |
-| Baseline (CORE) [1] | 66.1/59.8/61.8 | 50.9/45.9/47.4 | 59.1/53.4/55.1 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/bm_core.json) |
-| Baseline (IE) [1]   | 11.1/52.8/16.3 | 13.7/62.7/19.9 | 11.2/51.9/16.3 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/bm_ie.json) |
+| Human [1]           | 83.4/81.1/81.4 | 72.3/69.4/70.0 | 77.7/75.1/75.6 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/oracle.json) |
+| Baseline (CORE) [1] | 66.4/60.1/62.1 | 51.0/46.0/47.5 | 59.4/53.6/55.4 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/bm_core.json) |
+| Baseline (IE) [1]   | 11.3/53.4/16.6 | 13.7/62.8/19.9 | 11.4/52.3/16.5 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/bm_ie.json) |
 
 
 ## Model references
