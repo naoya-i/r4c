@@ -73,6 +73,28 @@ $\mathbfcal{R}^4\mathbfcal{C}$
 ## Papers
 1. Naoya Inoue, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, to appear.
 
+## bib
+
+```
+@inproceedings{inoue-etal-2020-r4c,
+    title = "R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason",
+    author = "Inoue, Naoya  and
+      Stenetorp, Pontus  and
+      Inui, Kentaro",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    year = "2020",
+    pages = "To appear"
+}
+```
 
 ## Author
+
 [Naoya Inoue](https://naoya-i.github.io)
+
+
+# Acknowledgements
+
+This work was supported by the UCL-Tohoku University Strategic Partnership Fund, JSPS KAKENHI Grant Number 19K20332, JST CREST Grant Number JPMJCR1513 (including the AIP challenge program), and the UK Defence Science and Technology Laboratory (Dstl) and Engineering and Physical Research Council (EPSRC) under grant EP/R018693/1 (a part of the collaboration between US DOD, UK MOD, and UK EPSRC under the Multidisciplinary University Research Initiative (MURI)).
+
+The authors would like to thank Paul Reisert, Keshav Singh, other members of the Tohoku NLP Lab, and the anonymous reviewers for their valuable feedback and insightful suggestions.
+%
