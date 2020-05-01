@@ -63,15 +63,9 @@ We look forward to your results!
 
 # Citation
 
-## Latex code for R4C logo
-
-```
-\DeclareMathAlphabet\mathbfcal{OMS}{cmsy}{b}{n}
-$\mathbfcal{R}^4\mathbfcal{C}$
-```
-
-
 ## Papers
+
+If you use our dataset in your paper, please cite the following paper:
 
 1. Naoya Inoue, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, to appear.
 
@@ -88,6 +82,13 @@ $\mathbfcal{R}^4\mathbfcal{C}$
     year = "2020",
     pages = "To appear"
 }
+```
+
+## Latex code for R4C logo
+
+```
+\DeclareMathAlphabet\mathbfcal{OMS}{cmsy}{b}{n}
+$\mathbfcal{R}^4\mathbfcal{C}$
 ```
 
 
