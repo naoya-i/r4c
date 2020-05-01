@@ -22,30 +22,30 @@ This website publicly releases the R4C dataset, the first, quality-assured datas
 
 # Download
 
-[This repository](https://github.com/naoya-i/r4c) contains the R4C corpus and its official evaluation script.
+[This repository](https://github.com/naoya-i/r4c) contains the R4C corpus and the official evaluation script.
 
 
 # Leaderboard
 
 ## Full prediction setting
 
-|Model|Entity|Relation|Full|Resource|
+|Model|Entity|Relation|Full|Date|
 |-|-|-|-|-|
-| Human [1]           | 83.4/81.1/81.4 | 72.3/69.4/70.0 | 77.7/75.1/75.6 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/oracle.json) |
+| Human [1]           | 83.4/81.1/81.4 | 72.3/69.4/70.0 | 77.7/75.1/75.6 | May 2020 |
 
 
 ## Golden supporting facts setting
 
-|Model|Entity|Relation|Full|Resource|
+|Model|Entity|Relation|Full|Date|
 |-|-|-|-|-|
-| Human [1]           | 83.4/81.1/81.4 | 72.3/69.4/70.0 | 77.7/75.1/75.6 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/oracle.json) |
-| Baseline (CORE) [1] | 66.4/60.1/62.1 | 51.0/46.0/47.5 | 59.4/53.6/55.4 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/bm_core.json) |
-| Baseline (IE) [1]   | 11.3/53.4/16.6 | 13.7/62.8/19.9 | 11.4/52.3/16.5 | [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/bm_ie.json) |
+| Human [1]           | 83.4/81.1/81.4 | 72.3/69.4/70.0 | 77.7/75.1/75.6 | May 2020 |
+| Baseline (CORE) [1] | 66.4/60.1/62.1 | 51.0/46.0/47.5 | 59.4/53.6/55.4 | May 2020 |
+| Baseline (IE) [1]   | 11.3/53.4/16.6 | 13.7/62.8/19.9 | 11.4/52.3/16.5 | May 2020 |
 
 
 ## Model references
 
-1. Naoya Inoue, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, to appear.
+1. Naoya Inoue, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, to appear.  [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/)
 1. *Your work here!*
 
 To list your work, please contact us the following information:
@@ -70,8 +70,11 @@ We look forward to your results!
 $\mathbfcal{R}^4\mathbfcal{C}$
 ```
 
+
 ## Papers
+
 1. Naoya Inoue, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, to appear.
+
 
 ## bib
 
@@ -87,7 +90,8 @@ $\mathbfcal{R}^4\mathbfcal{C}$
 }
 ```
 
-## Author
+
+# Author
 
 [Naoya Inoue](https://naoya-i.github.io)
 
@@ -97,4 +101,3 @@ $\mathbfcal{R}^4\mathbfcal{C}$
 This work was supported by the UCL-Tohoku University Strategic Partnership Fund, JSPS KAKENHI Grant Number 19K20332, JST CREST Grant Number JPMJCR1513 (including the AIP challenge program), and the UK Defence Science and Technology Laboratory (Dstl) and Engineering and Physical Research Council (EPSRC) under grant EP/R018693/1 (a part of the collaboration between US DOD, UK MOD, and UK EPSRC under the Multidisciplinary University Research Initiative (MURI)).
 
 The authors would like to thank Paul Reisert, Keshav Singh, other members of the Tohoku NLP Lab, and the anonymous reviewers for their valuable feedback and insightful suggestions.
-%
