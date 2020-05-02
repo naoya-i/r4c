@@ -99,6 +99,4 @@ $\mathbfcal{R}^4\mathbfcal{C}$
 
 # Acknowledgements
 
-This work was supported by the UCL-Tohoku University Strategic Partnership Fund, JSPS KAKENHI Grant Number 19K20332, JST CREST Grant Number JPMJCR1513 (including the AIP challenge program), and the UK Defence Science and Technology Laboratory (Dstl) and Engineering and Physical Research Council (EPSRC) under grant EP/R018693/1 (a part of the collaboration between US DOD, UK MOD, and UK EPSRC under the Multidisciplinary University Research Initiative (MURI)).
-
-The authors would like to thank Paul Reisert, Keshav Singh, other members of the Tohoku NLP Lab, and the anonymous reviewers for their valuable feedback and insightful suggestions.
+This work was supported by the UCL-Tohoku University Strategic Partnership Fund, JSPS KAKENHI Grant Number 19K20332, JST CREST Grant Number JPMJCR1513 (including the AIP challenge program), the European Union's Horizon 2020 research and innovation programme under grant agreement No 875160, and the UK Defence Science and Technology Laboratory (Dstl) and Engineering and Physical Research Council (EPSRC) under grant EP/R018693/1 (a part of the collaboration between US DOD, UK MOD, and UK EPSRC under the Multidisciplinary University Research Initiative (MURI)).
