@@ -18,12 +18,12 @@ R4C requires giving not only answers but also derivations: explanations that jus
 </p>
 
 This website publicly releases the R4C dataset, the first, quality-assured dataset consisting of 4.6k questions, each of which is annotated with 3 reference derivations (i.e. 13.8k derivations).
-The R4C dataset is built on top of [HotpotQA](hotpotqa.github.io/).
+The R4C dataset is built on top of [HotpotQA](https://hotpotqa.github.io/).
 
 # Download
 
 - [This repository](https://github.com/naoya-i/r4c) contains the R4C corpus and the official evaluation script.
-- Question-answer pairs are in [HotpotQA](hotpotqa.github.io/) dataset.
+- Question-answer pairs are in [HotpotQA](https://hotpotqa.github.io/) dataset.
 
 
 # Leaderboard
