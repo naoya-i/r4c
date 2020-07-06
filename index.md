@@ -46,7 +46,7 @@ The R4C dataset is built on top of [HotpotQA](https://hotpotqa.github.io/).
 
 ## Model references
 
-1. Naoya Inoue, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, to appear.  [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/)
+1. Naoya Inoue, Pontus Stenetorp and Kentaro Inui. R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL2020)</i>, July 2020, pp.6740–6750.  [Prediction](https://github.com/naoya-i/r4c/blob/master/prediction/)
 1. *Your work here!*
 
 To list your work, please contact us the following information:
