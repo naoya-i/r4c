@@ -19,7 +19,7 @@ This repository contains the following datasets and script:
 - R4C Corpus (`corpus/train.json`, `corpus/dev_csf.json`)
 - Prediction of two baseline models (CORE, IE) and oracle (`prediction/bm_core.json`, `prediction/bm_ie.json`, `prediction/oracle.json`)
 - Official evaluation script (`src/r4c_evaluate.py`)
-- Baseline models (TBA by July)
+- Baseline models (`src/baseline.py`)
 - Crowdsourcing interface (TBA by July)
 
 # R4C corpus
@@ -131,6 +131,19 @@ The following JSON fragment is an actual example from the corpus:
   ],
   "5a8c7595554299585d9e36b6": ...
 ```
+
+
+# Baseline models
+
+The script implements three baseline models: `Dep`, `AllEnt`, and `OpenIE`.
+Suppose we have the development set of HotpotQA in `data/hotpotqa/hotpot_dev_distractor_v1.json` and want to store the prediction in `results/bm_dep.json`.
+To run `Dep` baseline model, use the following command:
+
+`python ~/tmp/baseline.py -m Dep -in data/hotpotqa/hotpot_dev_distractor_v1.json -out results/bm_dep.json`
+
+where you specify the model to run by `-m` argument.
+
+Note: to run `OpenIE`, please install `stanford-openie` library (https://pypi.org/project/stanford-openie/).
 
 
 # Official evaluation script
