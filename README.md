@@ -140,7 +140,7 @@ The script implements three baseline models: `Dep`, `AllEnt`, and `OpenIE`.
 Suppose we have the development set of HotpotQA in `data/hotpotqa/hotpot_dev_distractor_v1.json` and want to store the prediction in `results/bm_dep.json`.
 To run `Dep` baseline model, use the following command:
 
-`python ~/tmp/baseline.py -m Dep -in data/hotpotqa/hotpot_dev_distractor_v1.json -out results/bm_dep.json`
+`python src/baseline.py -m Dep -in data/hotpotqa/hotpot_dev_distractor_v1.json -out results/bm_dep.json`
 
 where you specify the model to run by `-m` argument.
 
