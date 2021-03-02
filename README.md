@@ -136,6 +136,7 @@ The following JSON fragment is an actual example from the corpus:
 # Baseline models
 
 The script implements three baseline models: `Dep`, `AllEnt`, and `OpenIE`.
+
 Suppose we have the development set of HotpotQA in `data/hotpotqa/hotpot_dev_distractor_v1.json` and want to store the prediction in `results/bm_dep.json`.
 To run `Dep` baseline model, use the following command:
 
